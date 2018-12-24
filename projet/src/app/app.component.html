@@ -1,0 +1,38 @@
+<div class="container">
+<!--menu -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="">Projet</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink] = "['/goods','display']">Goods</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink] = "['/services','display']">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink] = "['/members','display']">Membres</a>
+      </li>
+      <li *ngIf="this.appService.isLoggedIn==false" class="nav-item">
+        <a class="nav-link" [routerLink] = "['/members','login']">Login/Register</a>
+      </li>
+      <li *ngIf="this.appService.isLoggedIn==true" class="nav-item">
+        <a class="nav-link" href = "#" (click)="this.appService.logout()">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- fin du menu -->
+
+<div class = "jumbotron">
+  <router-outlet></router-outlet>
+</div>
+
+</div>

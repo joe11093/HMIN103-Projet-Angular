@@ -1,0 +1,13 @@
+>mongoimport --db project --collection member --file DatabaseInsertMember.json --jsonArray
+
+mongoimport --db project --collection good --file DatabaseInsertGood.json --jsonArray
+
+mongoimport --db project --collection service --file DatabaseInsertService.json --jsonArray
+
+mongoimport --db project --collection A NOMMER--file DatabaseDescriptifGoods.json --jsonArray
+
+mongoimport --db project --collection descriptifService --file DatabaseDescriptifServices.json --jsonArray
+
+mongoimport --db project --collection disponibilite --file DatabaseDisponibilites.json --jsonArray
+
+mongoimport --db project --collection utilisation --file DatabaseUtilisations.json --jsonArray

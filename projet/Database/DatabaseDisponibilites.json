@@ -1,0 +1,5 @@
+[
+	{ "goodOrServ":"bien", "idgoodOrServ":"", "numWeek":"2", "numDay":"15"},
+	{ "goodOrServ":"service", "idgoodOrServ":"", "numWeek":"1", "numDay":"8"},
+	{ "goodOrServ":"bien", "idgoodOrServ":"", "numWeek":"4", "numDay":"30"}
+]

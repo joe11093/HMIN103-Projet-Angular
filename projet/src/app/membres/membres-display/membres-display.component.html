@@ -1,0 +1,9 @@
+<h1>Members</h1>
+<h1>{{this.memberService.isLoggedIn}}</h1>
+<div class = "jumbotron">
+  <h2>Voici la liste des membres :</h2>
+  <ul class="list-group">    
+
+    <li class="list-group-item" *ngFor="let membre of membres">{{membre.firstName}} {{membre.lastName}}:  {{membre.email}} </li>
+  </ul>
+</div>

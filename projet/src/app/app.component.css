@@ -1,0 +1,11 @@
+
+a { 
+	color: white;
+	text-decoration: none !important;
+}
+
+.divider{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}

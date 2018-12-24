@@ -1,0 +1,14 @@
+<h1>Borrow Good</h1>
+<h1>is logged in {{this.appService.isLoggedIn}}</h1>
+<h1>user id {{this.appService.user.id}}</h1>
+<h1>owner id {{this.good.owner_id}}</h1>
+<div class="jumbotron">
+  	<h4> {{this.good.name}}</h4><br/>
+  	 <p>Description: {{this.good.description}}</p> 
+  	 <p>Price: {{this.good.price}}</p> 
+  	<a *ngIf="this.appService.isLoggedIn" [routerLink] = "['..','create']"><button type="button" class="btn btn-success">Borrow</button> </a>
+
+	<button (click) = "delete()" type="button" class="btn btn-danger">Delete</button><br />
+	<br />
+
+</div>

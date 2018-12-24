@@ -1,0 +1,13 @@
+<h1>Services</h1>
+<div class="jumbotron">
+	<h3>Service</h3>
+	<a [routerLink] = "['..','create']">
+		<button *ngIf="this.appService.isLoggedIn==true" type="button" class="btn btn-success">Add service</button> 
+	</a> <br />
+
+  <div class = "" *ngFor="let service of services">
+  	<h4>- {{service.name}}</h4>
+  	 <p>{{service.description}}</p> 
+  	<a [routerLink] = "['/services','display',service._id]">read more</a> <br />
+  </div>
+</div>

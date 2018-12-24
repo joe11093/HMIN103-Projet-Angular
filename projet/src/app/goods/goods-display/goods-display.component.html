@@ -1,0 +1,13 @@
+<h1>Goods</h1>
+<div class="jumbotron">
+	<a [routerLink] = "['..','create']"><button *ngIf="this.appService.isLoggedIn==true" type="button" class="btn btn-success">Create Good</button> </a> <div class = "divider"></div>
+	<a [routerLink] = "['..','search']"><button type="button" class="btn btn-success">Look for a good</button> </a>
+
+  <div class = "" *ngFor="let good of goods">
+  	<h4>{{good.name}}</h4>
+  	 <!--<p>{{good.description}}</p> 
+  	 <p>price: {{good.price}}</p>  -->
+  	 <p>added on: {{good.date}}</p>
+  	<a [routerLink] = "['/goods','display',good._id]">read more</a> <br />
+  </div>
+</div>

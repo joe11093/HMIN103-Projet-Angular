@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h3>Add new Service</h3><br/>
+
+  <form (ngSubmit)="onSubmit()" #AddServiceForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="name" class="form-control" id="name" placeholder="Name"  name="name" [(ngModel)] = "name">
+    </div>
+
+    <div class="form-group">
+      <label for="description">description</label>
+      <input class="form-control" id="description" placeholder="Enter description..." name="description" [(ngModel)] = "description">
+    </div>
+    <button type="submit" class="btn btn-primary">ADD</button> 
+
+  </form>
+</div>
